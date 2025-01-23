@@ -75,12 +75,48 @@ function checkSearchWindow() {
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') { // Check if the Escape key was pressed
-      if (searchPopup) {
-          searchPopup.style.top = '-100%'; // Hide the popup
-      }
-      if (sideNavbar) {
-        sideNavbar.style.left = '-100%'; // Hide the popup
+    if (searchPopup) {
+      searchPopup.style.top = '-100%'; // Hide the popup
     }
-      
+    if (sideNavbar) {
+      sideNavbar.style.left = '-100%'; // Hide the popup
+    }
+
   }
 });
+
+
+
+
+function scrollContent1(direction) {
+  const content = document.querySelector('#content-pics1');
+  const scrollAmount = 200; // Amount to scroll in pixels
+
+  if (direction === 'left') {
+      content.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else if (direction === 'right') {
+      content.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+
+function scrollContent2(direction) {
+  const content = document.querySelector('#content-pics2');
+  const scrollAmount = 200; // Amount to scroll in pixels
+
+  if (direction === 'left') {
+      content.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else if (direction === 'right') {
+      content.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+
+function scrollContent3(direction) {
+  const content = document.querySelector('#content-pics3');
+  const scrollAmount = 200; // Amount to scroll in pixels
+
+  if (direction === 'left') {
+      content.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else if (direction === 'right') {
+      content.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}

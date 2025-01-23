@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="css/position.css">
     <link rel="stylesheet" href="css/home-headline.css">
     <link rel="stylesheet" href="css/side-nav-bar.css">
+    <link rel="stylesheet" href="css/home-content.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>The Smart Tailoring | HAVELOCK TAILORS</title>
 </head>
 
 <body>
 
-    
+
     <!--
     <div style="display: block;
     position: fixed;
@@ -37,7 +39,7 @@
 
 
 
- 
+
     <!--    side nav bar    -->
 
     <div class="side-nav-bar" id="side-nav-bar">
@@ -47,7 +49,11 @@
             </div>
             <div class="right-to-nav-brand">
                 <div class="close-btn" onclick="hideNavBar()">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
                 </div>
             </div>
         </div>
@@ -85,7 +91,7 @@
         <div class="panel-section">
             <div class="panel">
                 <div class="left-side">
-                    <div class="menu-icon" onclick="showNavBar()" ><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    <div class="menu-icon" onclick="showNavBar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="undefined">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></div>
@@ -102,6 +108,8 @@
 
     <!--                            header section END                          -->
 
+
+
     <div id="home"></div>
 
     <div class="home-headline">
@@ -111,66 +119,173 @@
     </div>
 
 
-    <div id="gallery">
-        <div style="
-    padding: 300px 100px;
-    margin-top: 1px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aquamarine;
-    ">
-            <h1>this is the Gallery</h1>
+    <!--                                home content section                             -->
+
+
+    <div class="home-content">
+        <div class="part">
+            <div class="part-content1">
+                <div class="left-arrow" onclick="scrollContent1('left')">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                    </svg>
+                </div>
+                <div class="content-headline">
+                    <h1><span>Rent</span> <span>from</span> <span>us</span></h1>
+                </div>
+                <div class="content-pics" id="content-pics1">
+                    <div class="home-img-con">
+                        <img src="/pics/blazer.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Blazers</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/blazer-trouser.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Office Suits</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/full-wedding-suit.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Western type</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/wedding-national-suit.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>National</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/wedding-kurta.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Kurta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-arrow" onclick="scrollContent1('right')">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="about-us">
-        <div style="
-    padding: 300px 100px;
-    margin-top: 1px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(127, 129, 255);
-    ">
-            <h1>this is the about us</h1>
+
+        <div class="part">
+            <div class="part-content2">
+                <div class="left-arrow" onclick="scrollContent2('left')">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                    </svg>
+                </div>
+                <div class="content-headline">
+                    <h1><span>Weddings</span> <span>with</span> <span>HAVELOCK</span></h1>
+                </div>
+                <div class="content-pics" id="content-pics2">
+                    <div class="home-img-con">
+                        <img src="/pics/tailoring.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Tailoring</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/first-fitting.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>First Fitting</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/rent-out.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Rent Out</p>
+                        </div>
+                    </div>
+
+                    <div class="right-arrow" onclick="scrollContent2('right')">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#000000">
+                            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="contact-us">
-        <div style="
-    padding: 300px 100px;
-    margin-top: 1px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 189, 127);
-    ">
-            <h1>this is the contact us</h1>
+
+        <div class="part">
+            <div class="part-content2">
+                <div class="left-arrow" onclick="scrollContent3('left')">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                    </svg>
+                </div>
+                <div class="content-headline">
+                    <h1><span>Custom</span> <span>Tailoring</span></h1>
+                </div>
+                <div class="content-pics" id="content-pics3">
+                    <div class="home-img-con">
+                        <img src="/pics/custom-full-suit.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Full Suits</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/custom-blazer.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Blazers</p>
+                        </div>
+                    </div>
+                    <div class="home-img-con">
+                        <img src="/pics/custom-shirt.jpeg" alt="">
+                        <div class="img-mask">
+                            <p>Shirts</p>
+                        </div>
+                    </div>
+
+                    <div class="right-arrow" onclick="scrollContent3('right')">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#000000">
+                            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        
+
+
+        <!--                                home content section end                             -->
 
 
 
 
-    <div class="whatsapp-btn">
-        <a href="https://wa.me/+94711863680" target="_blank">
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                    fill="#000000">
-                    <path
-                        d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
-                </svg>
-                Chat on WhatsApp
-            </p>
-        </a>
-    </div>
+        <div class="whatsapp-btn">
+            <a href="https://wa.me/+94711863680" target="_blank">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path
+                            d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+                    </svg>
+                    Chat on WhatsApp
+                </p>
+            </a>
+        </div>
+
+        <!--                                footer section                             -->
 
 
+        <!--                                footer section end                       -->
 
 
-    <script src="script.js" defer></script>
+        <script src="script.js" defer></script>
 </body>
 
 </html>
